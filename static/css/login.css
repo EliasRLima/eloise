@@ -1,0 +1,92 @@
+        
+    *{margin:0px;padding:0;}
+
+    /* para garantir que estes elementos ocuparão toda a tela */
+    body, html {
+        
+        width: 100%;
+        height: 100%;
+        font-family: Arial, Tahoma, sans-serif;    
+        background-image: url(../../static/img/montecastelo.jpg); background-repeat: no-repeat; 
+        /*background: url(../../static/img/montecastelo.jpg) no-repeat center top fixed; */
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+    }
+ 
+    #fundo-externo {
+        overflow: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+        width: 100%;
+        height: 100%;
+        position: relative; /* criamos um contexto para posicionamento */
+    }
+     
+    #fundo {
+        position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+        width: 100%;
+        height: 100%;
+    }
+     
+    #fundo img {
+        width: 100%; /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+        position: absolute;
+    }
+     
+    #site {
+
+        position: absolute;
+        top: 0px;
+        width: 350px;
+        padding: 50px;
+       
+            
+    }
+    input.user {
+    border:0;
+    width:87%;
+    height:40px;    
+    /*padding:0 5px;  */
+    background:#fff;
+    float: left;
+    margin-left: 15px;
+}
+input.pass {
+    border:0;
+    width:57%;
+    height:40px;    
+    /*padding:0 5px;  */
+    background:#fff;
+    float: left;
+    margin-left: 15px;
+}input.enter {
+    border:0;
+    width:27%;
+    height:40px;    
+    color:#fff; 
+    font-size:8pt; 
+    text-transform:uppercase; 
+    background:#006633; 
+    cursor:pointer; 
+    float: right;
+    margin-right: 25px;
+}
+input.enter:hover {background-color: #cc0000;}
+
+
+    #titulo{font-family: 'MonteCristo',Arial, Tahoma, sans-serif; font-size: 48px; color:#FF0000;}
+
+    div.content{/*margin-left: 25px;*/ }
+    div.logo{margin-bottom: -10px;}
+    form.form1{height: 200px;}
+    form.form1 label#matricula{ width:100%; color:#C1FFC1; float:left; padding-top: 5px;}
+    form.form1 label#senha{width:100%; color:#C1FFC1; float:left; padding-top: 5px;}    
+    div.logo{background-image: url(../../static/img/logomm.png); background-repeat: no-repeat; width: 317px; height: 148px;  padding: 5px;}
+
+    div.footer{ background-color:black; color:#FFFFFF; position: fixed; bottom:0; width: 100%; text-align: center;}
+    div.footer a{ color:#FF0000; font-weight: bold; text-decoration: none;  }
+    div#clear{clear: left;}
+    .cx-label{margin-left:5%; text-align: left;}
+    div.getForm{background-image: url("../../static/img/bg-box.png"); color:#FFFFFF; width: 317px; text-align:center; }      
+

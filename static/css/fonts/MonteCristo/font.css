@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'MonteCristo';
+	src: url('./MonteCristo.eot');
+	src: local('MonteCristo'), url('./MonteCristo.woff') format('woff'), url('./MonteCristo.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_79300">Text with this font applied</p> */
+.fontsforweb_fontid_79300 {
+	font-family: 'MonteCristo' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
